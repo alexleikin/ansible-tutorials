@@ -4,7 +4,7 @@
 - hosts: node01
   name: Installing apache2 on Ubuntu
   tasks:
-    - apt: pkg=apache2 state=latest
+    - yum: pkg=apache2 state=latest
 
 - hosts: localhost
   name: Installing httpd on rhel
