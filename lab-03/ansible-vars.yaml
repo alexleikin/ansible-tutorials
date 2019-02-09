@@ -25,15 +25,15 @@
     # - shell: /usr/bin/uptime
     #   register: result
 
-    # - debug:
-    #     var: result
-    # - debug:
-    #     msg: "{{ my_name }}"
-    #   when: my_name == "Chandan1"
+    - debug:
+        var: result
+    - debug:
+        msg: "{{ my_name }}"
+      when: my_name == "Ahsan"
 
-    - name: Display all variables/facts known for a host
-      debug:
-        var: hostvars[inventory_hostname].ansible_XHC20
+    # - name: Display all variables/facts known for a host
+    #   debug:
+    #     var: hostvars[inventory_hostname].ansible_XHC20
 
 # - hosts: all
 #   name: Setting up the hostnames
