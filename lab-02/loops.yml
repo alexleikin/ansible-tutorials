@@ -5,7 +5,7 @@
   #   - 'a'
   #   - 'b'
   #   - 'c'
-  # tasks:
+  tasks:
   #   - debug:
   #       msg: "{{ item[0] }}"
   #     with_items:
