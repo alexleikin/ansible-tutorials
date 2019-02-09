@@ -2,10 +2,11 @@
 
 
 - hosts: node01
-  name: Installing apache2 on Ubuntu
+  name: Installing http on Ubuntu
   tasks:
-    - yum: pkg=apache2 state=latest
-
+    - yum: pkg=httpd state=latest
+  ignore_error: true
+  
 - hosts: localhost
   name: Installing httpd on rhel
   tasks:
