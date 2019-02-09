@@ -4,10 +4,10 @@
 - hosts: node01
   name: Installing http on Ubuntu
   tasks:
-    - yum: pkg=httpd state=present
+    - yum: pkg=httpd state=latest
   ignore_errors: true
   
 - hosts: localhost
   name: Installing httpd on rhel
   tasks:
-    - yum: pkg=httpd state=present
+    - yum: pkg=httpd state=latest
