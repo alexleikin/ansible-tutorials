@@ -20,3 +20,5 @@ ansible -m service -a "name=nginx state=started enabled=yes" node01 --become
 ansible -m file -a "path=/home/ec2-user/usingAnsible state=directory" node01 --become
 ansible -m copy -a "src=Vagrantfile dest=/tmp" node01 --become
 
+## this is a test commit
+
